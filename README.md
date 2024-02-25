@@ -21,59 +21,7 @@ Screenshots:
 
 ![Screenshot 2024-02-25 150210](https://github.com/Athish-Pranav/likeminds/assets/125726874/0f1c0d46-d684-43dd-8f1b-9823c4786f6f)
 
-Backend
- +-------------+
-                          |   users     |
-                          +-------------+
-                          | id (PK)     |
-                          | username    |
-                          | email       |
-                          | password    |
-                          | coverPic    |
-                          | profilePic  |
-                          | city        |
-                          | website     |
-                          +-------------+
-                                 |
-                                 |
-                                 |
-                                 |
-                      +----------+------------+
-                      |                       |
-                      v                       v
-               +-------------+         +-------------+
-               |   posts     |         |   stories   |
-               +-------------+         +-------------+
-               | id (PK)     |         | id (PK)     |
-               | desc        |         | desc        |
-               | img         |         | createdAt   |
-               | userId (FK) |         | userId (FK) |
-               | createdAt   |         | postId (FK) |
-               +-------------+         +-------------+
-                      |
-                      |
-                      |
-                      |
-             +--------+--------+
-             |                 |
-             v                 v
-       +-------------+   +-------------+
-       |  likes      |   |  comments   |
-       +-------------+   +-------------+
-       | id (PK)     |   | id (PK)     |
-       | userId (FK) |   | desc        |
-       | postId (FK) |   | createdAt   |
-       +-------------+   | userId (FK) |
-                          | postId (FK) |
-                          +-------------+
 
-                    +-------------+
-                    | relationships|
-                    +-------------+
-                    | id (PK)     |
-                    | followerUserId (FK) |
-                    | followedUserId (FK) |
-                    +-------------+
 
 
 
